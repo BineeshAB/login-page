@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="src/css/style.css" />
+    </head>
+    <body>
+        <div class="login-page" id="login-page">
+            <div class="container" id="container">
+                <div class="login-title">Please Login</div>
+                <form action="#">
+                    <div class="email-box">
+                        <input
+                            type="email"
+                            class="text-box email"
+                            name="mail"
+                            id="mail"
+                            placeholder="Email"
+                            required
+                        /><br />
+                        <label for="mail" id="mail-label">Email</label>
+                    </div>
+                    <div class="pwd-box">
+                        <input
+                            type="password"
+                            class="text-box password"
+                            name="pwd"
+                            id="pwd"
+                            placeholder="Password"
+                            required
+                        />
+                        <br />
+                        <label for="pwd" id="pwd-label">Password</label>
+                    </div>
+                    <button type="submit" onclick="login()">Login</button>
+                    <span class="register-link">
+                        Don't have an account?
+                        <a href=""> Register</a>
+                    </span>
+                </form>
+            </div>
+        </div>
+        <script src="src/js/index.js"></script>
+    </body>
+</html>
